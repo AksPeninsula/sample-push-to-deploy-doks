@@ -19,9 +19,11 @@ spec:
       labels:
         app: python-example
     spec:
+      imagePullSecrets:
+        - name: registry-peninsula
       containers:
       - name: python-example
-        image: <IMAGE>
+        image: ${{ secrets.REGISTRY_NAME }}/python-example:<latest>
         ports:
         - containerPort: 80
         resources:
