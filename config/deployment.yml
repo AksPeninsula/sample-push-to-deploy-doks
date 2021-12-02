@@ -23,7 +23,7 @@ spec:
         - name: registry-peninsula
       containers:
       - name: python-example
-        image: registry.digitalocean.com/peninsula/python-example:<recent>
+        image: registry.digitalocean.com/peninsula/python-example
         ports:
         - containerPort: 80
         resources:
